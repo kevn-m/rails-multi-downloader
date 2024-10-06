@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
   <head>
     <title><%= content_for(:title) || "Multi Download" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,7 +18,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="bg-gray-900 text-white">
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>

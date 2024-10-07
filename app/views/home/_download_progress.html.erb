@@ -1,0 +1,5 @@
+<div class="mt-8 w-full">
+  <% urls.each_with_index do |url, index| %>
+    <%= render partial: "home/progress_bar", locals: { url: url, progress: progress[index], index: index } %>
+  <% end %>
+</div>

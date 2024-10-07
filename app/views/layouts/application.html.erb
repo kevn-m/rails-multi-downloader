@@ -17,11 +17,18 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= hotwire_livereload_tags if Rails.env.development? %>
+    <%= turbo_include_tags %>
   </head>
 
   <body class="bg-gray-900 text-white">
+    <% if notice %>
+      <div class="bg-green-500 text-white p-4 mb-4">
+        <%= notice %>
+      </div>
+    <% end %>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
+    <%= turbo_stream_from "download_progress" %>
   </body>
 </html>

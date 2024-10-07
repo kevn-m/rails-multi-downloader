@@ -1,5 +1,9 @@
 source "https://rubygems.org"
 
+# Add this line near the top of your Gemfile
+gem "net-pop"
+gem "net-protocol"
+
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -19,7 +23,7 @@ gem "tailwindcss-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
-# gem "redis", ">= 4.0.1"
+gem "redis", ">= 4.0.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -50,8 +54,6 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-
-  # Add hotwire-livereload for development
   gem "hotwire-livereload"
 end
 
@@ -60,3 +62,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+ruby "3.3.4"

@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# Add this line near the top of your Gemfile
+gem 'net-pop'
+
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]

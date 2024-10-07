@@ -8,7 +8,6 @@ services:
   - type: web
     name: mysite
     runtime: ruby
-    runtimeVersion: "3.3.4"
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rails server"

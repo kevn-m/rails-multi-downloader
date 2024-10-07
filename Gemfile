@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Add this line near the top of your Gemfile
-gem 'net-pop'
+gem "net-pop"
 
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
@@ -61,3 +61,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+ruby "3.3.3"

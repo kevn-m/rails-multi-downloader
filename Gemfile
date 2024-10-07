@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 # Add this line near the top of your Gemfile
 gem "net-pop"
+gem "net-protocol"
 
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"

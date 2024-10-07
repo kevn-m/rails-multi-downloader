@@ -357,6 +357,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   net-pop
+  net-protocol
   puma (>= 5.0)
   rails!
   redis (>= 4.0.1)

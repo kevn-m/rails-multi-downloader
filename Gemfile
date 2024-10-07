@@ -62,4 +62,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-ruby "3.3.3"
+ruby "3.3.4"
